@@ -14,6 +14,8 @@
 		04A0CDD02A69C9BD00817623 /* YassirChallengeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDCF2A69C9BD00817623 /* YassirChallengeTaskTests.swift */; };
 		04A0CDEC2A69CF0C00817623 /* MovieHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDEB2A69CF0C00817623 /* MovieHomeView.swift */; };
 		04A0CDEE2A69CF5C00817623 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDED2A69CF5C00817623 /* MovieItemView.swift */; };
+		04A0CDF52A69D13700817623 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDF42A69D13700817623 /* Movie.swift */; };
+		04A0CDF72A69D36E00817623 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDF62A69D36E00817623 /* MovieResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		04A0CDD52A69C9BD00817623 /* YassirChallengeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YassirChallengeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A0CDEB2A69CF0C00817623 /* MovieHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHomeView.swift; sourceTree = "<group>"; };
 		04A0CDED2A69CF5C00817623 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
+		04A0CDF42A69D13700817623 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		04A0CDF62A69D36E00817623 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 		04A0CDEF2A69CFE700817623 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				04A0CDF42A69D13700817623 /* Movie.swift */,
+				04A0CDF62A69D36E00817623 /* MovieResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,7 +306,9 @@
 				04A0CDEE2A69CF5C00817623 /* MovieItemView.swift in Sources */,
 				04A0CDC12A69C9B700817623 /* ContentView.swift in Sources */,
 				04A0CDEC2A69CF0C00817623 /* MovieHomeView.swift in Sources */,
+				04A0CDF72A69D36E00817623 /* MovieResponse.swift in Sources */,
 				04A0CDBF2A69C9B700817623 /* YassirChallengeTaskApp.swift in Sources */,
+				04A0CDF52A69D13700817623 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
