@@ -12,8 +12,6 @@
 		04A0CDC32A69C9BC00817623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A0CDC22A69C9BC00817623 /* Assets.xcassets */; };
 		04A0CDC62A69C9BC00817623 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A0CDC52A69C9BC00817623 /* Preview Assets.xcassets */; };
 		04A0CDD02A69C9BD00817623 /* YassirChallengeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDCF2A69C9BD00817623 /* YassirChallengeTaskTests.swift */; };
-		04A0CDDA2A69C9BD00817623 /* YassirChallengeTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDD92A69C9BD00817623 /* YassirChallengeTaskUITests.swift */; };
-		04A0CDDC2A69C9BD00817623 /* YassirChallengeTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDDB2A69C9BD00817623 /* YassirChallengeTaskUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +40,6 @@
 		04A0CDCB2A69C9BD00817623 /* YassirChallengeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YassirChallengeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A0CDCF2A69C9BD00817623 /* YassirChallengeTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirChallengeTaskTests.swift; sourceTree = "<group>"; };
 		04A0CDD52A69C9BD00817623 /* YassirChallengeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YassirChallengeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04A0CDD92A69C9BD00817623 /* YassirChallengeTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirChallengeTaskUITests.swift; sourceTree = "<group>"; };
-		04A0CDDB2A69C9BD00817623 /* YassirChallengeTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirChallengeTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +72,6 @@
 			children = (
 				04A0CDBD2A69C9B700817623 /* YassirChallengeTask */,
 				04A0CDCE2A69C9BD00817623 /* YassirChallengeTaskTests */,
-				04A0CDD82A69C9BD00817623 /* YassirChallengeTaskUITests */,
 				04A0CDBC2A69C9B700817623 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,15 +111,6 @@
 				04A0CDCF2A69C9BD00817623 /* YassirChallengeTaskTests.swift */,
 			);
 			path = YassirChallengeTaskTests;
-			sourceTree = "<group>";
-		};
-		04A0CDD82A69C9BD00817623 /* YassirChallengeTaskUITests */ = {
-			isa = PBXGroup;
-			children = (
-				04A0CDD92A69C9BD00817623 /* YassirChallengeTaskUITests.swift */,
-				04A0CDDB2A69C9BD00817623 /* YassirChallengeTaskUITestsLaunchTests.swift */,
-			);
-			path = YassirChallengeTaskUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A0CDDC2A69C9BD00817623 /* YassirChallengeTaskUITestsLaunchTests.swift in Sources */,
-				04A0CDDA2A69C9BD00817623 /* YassirChallengeTaskUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
