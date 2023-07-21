@@ -31,15 +31,37 @@ import Foundation
 
 
 struct Movie: Identifiable, Codable {
-    let id: Int
-    let adult: Bool
-    let originalTitle: String
-    let title: String
-    let overview: String
-    let popularity: Int
-    let posterPath: String
-    let voteAverage: Int
-    let voteCount: Int
+    let id: Int?
+    let adult: Bool?
+    let originalTitle: String?
+    let title: String?
+    let overview: String?
+    let popularity: Double?
+    let posterPath: String?
+    let voteAverage: Float?
+    let voteCount: Int?
+    
+    init(
+        id: Int?,
+        adult: Bool?,
+        originalTitle: String?,
+        title: String?,
+        overview: String?,
+        popularity: Double?,
+        posterPath: String?,
+        voteAverage: Float?,
+        voteCount: Int?
+    ) {
+        self.id = id
+        self.adult = adult
+        self.originalTitle = originalTitle
+        self.title = title
+        self.overview = overview
+        self.popularity = popularity
+        self.posterPath = posterPath
+        self.voteAverage = voteAverage
+        self.voteCount = voteCount
+    }
     
     enum CodingKeys: String, CodingKey {
         case id

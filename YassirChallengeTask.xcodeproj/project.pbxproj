@@ -16,6 +16,12 @@
 		04A0CDEE2A69CF5C00817623 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDED2A69CF5C00817623 /* MovieItemView.swift */; };
 		04A0CDF52A69D13700817623 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDF42A69D13700817623 /* Movie.swift */; };
 		04A0CDF72A69D36E00817623 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDF62A69D36E00817623 /* MovieResponse.swift */; };
+		04A0CDF92A69DBCE00817623 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDF82A69DBCE00817623 /* NetworkManager.swift */; };
+		04A0CDFC2A69DE1000817623 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDFB2A69DE1000817623 /* APIConfiguration.swift */; };
+		04A0CDFE2A69E2E800817623 /* MovieDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDFD2A69E2E800817623 /* MovieDataService.swift */; };
+		04A0CE012A69E9BD00817623 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CE002A69E9BD00817623 /* HomeViewModel.swift */; };
+		04A0CE042A69ECC200817623 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CE032A69ECC200817623 /* PreviewProvider.swift */; };
+		04CADFF02A6AB09200CE0866 /* YassirKeys in Frameworks */ = {isa = PBXBuildFile; productRef = 04CADFEF2A6AB09200CE0866 /* YassirKeys */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		04A0CDED2A69CF5C00817623 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 		04A0CDF42A69D13700817623 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04A0CDF62A69D36E00817623 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		04A0CDF82A69DBCE00817623 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04A0CDFB2A69DE1000817623 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		04A0CDFD2A69E2E800817623 /* MovieDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataService.swift; sourceTree = "<group>"; };
+		04A0CE002A69E9BD00817623 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		04A0CE032A69ECC200817623 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		04CADFED2A6AADFA00CE0866 /* YassirKeys */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = YassirKeys; path = dependencies/YassirKeys; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CADFF02A6AB09200CE0866 /* YassirKeys in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +91,11 @@
 		04A0CDB22A69C9B700817623 = {
 			isa = PBXGroup;
 			children = (
+				04CADFEC2A6AADFA00CE0866 /* Packages */,
 				04A0CDBD2A69C9B700817623 /* YassirChallengeTask */,
 				04A0CDCE2A69C9BD00817623 /* YassirChallengeTaskTests */,
 				04A0CDBC2A69C9B700817623 /* Products */,
+				04CADFEE2A6AB09200CE0866 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +112,11 @@
 		04A0CDBD2A69C9B700817623 /* YassirChallengeTask */ = {
 			isa = PBXGroup;
 			children = (
-				04A0CDF12A69D02D00817623 /* Core */,
+				04A0CE022A69ECAD00817623 /* Extensions */,
 				04A0CDF02A69D01300817623 /* Utilities */,
+				04A0CDFA2A69DDF800817623 /* Services */,
 				04A0CDEF2A69CFE700817623 /* Models */,
+				04A0CDF12A69D02D00817623 /* Core */,
 				04A0CDBE2A69C9B700817623 /* YassirChallengeTaskApp.swift */,
 				04A0CDC02A69C9B700817623 /* ContentView.swift */,
 				04A0CDC22A69C9BC00817623 /* Assets.xcassets */,
@@ -145,6 +162,7 @@
 		04A0CDF02A69D01300817623 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				04A0CDF82A69DBCE00817623 /* NetworkManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -161,6 +179,7 @@
 		04A0CDF22A69D03700817623 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				04A0CDFF2A69E99A00817623 /* ViewModel */,
 				04A0CDEA2A69CEED00817623 /* View */,
 			);
 			path = Home;
@@ -171,6 +190,46 @@
 			children = (
 			);
 			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		04A0CDFA2A69DDF800817623 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04A0CDFB2A69DE1000817623 /* APIConfiguration.swift */,
+				04A0CDFD2A69E2E800817623 /* MovieDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04A0CDFF2A69E99A00817623 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04A0CE002A69E9BD00817623 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04A0CE022A69ECAD00817623 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04A0CE032A69ECC200817623 /* PreviewProvider.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04CADFEC2A6AADFA00CE0866 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				04CADFED2A6AADFA00CE0866 /* YassirKeys */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		04CADFEE2A6AB09200CE0866 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +248,9 @@
 			dependencies = (
 			);
 			name = YassirChallengeTask;
+			packageProductDependencies = (
+				04CADFEF2A6AB09200CE0866 /* YassirKeys */,
+			);
 			productName = YassirChallengeTask;
 			productReference = 04A0CDBB2A69C9B700817623 /* YassirChallengeTask.app */;
 			productType = "com.apple.product-type.application";
@@ -306,7 +368,12 @@
 				04A0CDEE2A69CF5C00817623 /* MovieItemView.swift in Sources */,
 				04A0CDC12A69C9B700817623 /* ContentView.swift in Sources */,
 				04A0CDEC2A69CF0C00817623 /* MovieHomeView.swift in Sources */,
+				04A0CE012A69E9BD00817623 /* HomeViewModel.swift in Sources */,
+				04A0CDFC2A69DE1000817623 /* APIConfiguration.swift in Sources */,
+				04A0CDF92A69DBCE00817623 /* NetworkManager.swift in Sources */,
+				04A0CE042A69ECC200817623 /* PreviewProvider.swift in Sources */,
 				04A0CDF72A69D36E00817623 /* MovieResponse.swift in Sources */,
+				04A0CDFE2A69E2E800817623 /* MovieDataService.swift in Sources */,
 				04A0CDBF2A69C9B700817623 /* YassirChallengeTaskApp.swift in Sources */,
 				04A0CDF52A69D13700817623 /* Movie.swift in Sources */,
 			);
@@ -625,6 +692,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04CADFEF2A6AB09200CE0866 /* YassirKeys */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YassirKeys;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04A0CDB32A69C9B700817623 /* Project object */;
 }

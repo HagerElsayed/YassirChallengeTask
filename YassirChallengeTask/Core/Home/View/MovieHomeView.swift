@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct MovieHomeView: View {
+    @EnvironmentObject private var vm: HomeViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        allMoviesList
     }
 }
 
+extension MovieHomeView {
+    private var allMoviesList: some View {
+        List {
+            ForEach(vm.movies) { movie in
+                Text("\(movie.title ?? "")")
+            }
+        }
+        .listStyle(PlainListStyle())
+    }
+}
 struct MovieHomeView_Previews: PreviewProvider {
     static var previews: some View {
         MovieHomeView()
+            .environmentObject(developerPreview.homeViewModel)
     }
+        
 }

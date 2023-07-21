@@ -8,10 +8,22 @@
 import Foundation
 
 struct MovieResponse: Codable {
-    let page: Int
-    let results: [Movie]
-    let totalPages: Int
-    let totalResults: Int
+    let page: Int?
+    let results: [Movie]?
+    let totalPages: Int?
+    let totalResults: Int?
+    
+    init(
+        page: Int?,
+        results: [Movie]?,
+        totalPages: Int?,
+        totalResults: Int?
+    ) {
+        self.page = page
+        self.results = results
+        self.totalPages = totalPages
+        self.totalResults = totalResults
+    }
     
     enum CodingKeys: String, CodingKey {
         case page

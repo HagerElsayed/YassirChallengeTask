@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct YassirChallengeTaskApp: App {
+    @StateObject private var homeViewModel = HomeViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MovieHomeView()
+                .environmentObject(homeViewModel)
         }
     }
 }
