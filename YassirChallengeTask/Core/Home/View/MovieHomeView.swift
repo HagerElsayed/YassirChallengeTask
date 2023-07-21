@@ -11,13 +11,13 @@ struct MovieHomeView: View {
     @EnvironmentObject private var viewModel: HomeViewModel
     @Binding var movie: MovieItem
     @Binding var isDetails: Bool
-
+    
     let namespace: Namespace.ID
     init(
         namespace: Namespace.ID = Namespace().wrappedValue,
         detailsData: Binding<MovieItem> = .constant(MovieItem(model: DeveloperPreview.instance.movie)),
         isDetails: Binding<Bool> = .constant(false)
-
+        
     ) {
         self.namespace = namespace
         self._movie = detailsData
@@ -33,7 +33,7 @@ struct MovieHomeView: View {
         .ignoresSafeArea()
         .padding(16)
         .background(Color.theme.background)
-
+        
     }
 }
 
@@ -49,8 +49,10 @@ extension MovieHomeView {
                 MovieItemView(movie: movie, namespace: namespace)
                     .matchedGeometryEffect(id: movie.id, in: namespace)
                     .onTapGesture {
-                        // TODO: - go to Details screen
+                        // Mark: - go to Details screen
                         withAnimation(.spring()) {
+                            self.movie = movie
+                            self.isDetails.toggle()
                         }
                     }
             }

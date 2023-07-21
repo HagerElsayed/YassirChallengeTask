@@ -16,18 +16,24 @@ struct MainFlow: View {
     var body: some View {
         ZStack {
             if isDetails {
-                // TODO:- Movie Details screen
+                MovieDetails(namespace: namespace, detailsData: $detailData, isDetails: $isDetails)
             } else {
                 MovieHomeView(namespace: namespace, detailsData: $detailData, isDetails: $isDetails)
                     .environmentObject(homeViewModel)
             }
         }
+        .background(Color.theme.background)
        
     }
 }
 
 struct MainFlow_Previews: PreviewProvider {
     static var previews: some View {
-        MainFlow()
+        Group {
+            MainFlow()
+            MainFlow()
+                .preferredColorScheme(.dark)
+        }
+        
     }
 }
