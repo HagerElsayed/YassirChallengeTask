@@ -12,8 +12,9 @@ struct YassirChallengeTaskApp: App {
     @StateObject private var homeViewModel = HomeViewModel()
     var body: some Scene {
         WindowGroup {
-            MovieHomeView()
-                .environmentObject(homeViewModel)
+//            MovieHomeView()
+//                .environmentObject(homeViewModel)
+            MainFlow()
         }
     }
 }

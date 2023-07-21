@@ -12,26 +12,16 @@ struct MovieItemView: View {
     let namespace: Namespace.ID
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Image(movie.posterPath)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .cornerRadius(20, corners: [.topLeft, .bottomRight])
-                    .padding(.bottom, 20)
-//                    .matchedGeometryEffect(id: lamp.id, in: namespace)
-
-            }
-            
+            MovieImageView(movie: movie)
             VStack(alignment: .leading, spacing: 10) {
                 Text(movie.title)
-                    .font(.title2)
-                    .fontWeight(.bold)
+                    .font(.headline)                    .fontWeight(.bold)
                     .foregroundColor(Color.theme.primary)
                 
                 Text(movie.voteCount)
-                    .font(.title2)
+                    .font(.caption)
                     .fontWeight(.medium)
-                    .foregroundColor(Color.theme.accent)
+                    .foregroundColor(Color.theme.secondaryText)
             }
         }
     }
