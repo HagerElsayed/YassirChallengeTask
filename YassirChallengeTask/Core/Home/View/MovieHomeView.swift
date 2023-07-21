@@ -8,21 +8,42 @@
 import SwiftUI
 
 struct MovieHomeView: View {
-    @EnvironmentObject private var vm: HomeViewModel
-    
+    @EnvironmentObject private var viewModel: HomeViewModel
+    let namespace: Namespace.ID
+    init(
+        namespace: Namespace.ID = Namespace().wrappedValue
+    ) {
+        self.namespace = namespace
+    }
     var body: some View {
-        allMoviesList
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack {
+                allMoviesList
+            }
+        }
+        .ignoresSafeArea()
     }
 }
 
 extension MovieHomeView {
     private var allMoviesList: some View {
-        List {
-            ForEach(vm.movies) { movie in
-                Text("\(movie.title ?? "")")
+        LazyVGrid(
+            columns: [
+                GridItem(.adaptive(minimum: 150), spacing: 20)
+            ],
+            spacing: 25
+        ) {
+            ForEach(viewModel.movies) { movie in
+                MovieItemView(movie: movie, namespace: namespace)
+                    .matchedGeometryEffect(id: movie.id, in: namespace)
+                    .onTapGesture {
+                        // TODO: - go to Details screen
+                        withAnimation(.spring()) {
+                        }
+                    }
             }
         }
-        .listStyle(PlainListStyle())
+        .padding()
     }
 }
 struct MovieHomeView_Previews: PreviewProvider {
@@ -30,5 +51,5 @@ struct MovieHomeView_Previews: PreviewProvider {
         MovieHomeView()
             .environmentObject(developerPreview.homeViewModel)
     }
-        
+    
 }

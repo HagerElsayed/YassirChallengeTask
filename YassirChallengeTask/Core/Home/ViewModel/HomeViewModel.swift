@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class HomeViewModel: ObservableObject {
-    @Published var movies: [Movie] = []
+    @Published var movies: [MovieItem] = []
     private let movieDataService = MovieDataService()
     private var cancellables = Set<AnyCancellable>()
     
@@ -20,7 +20,7 @@ class HomeViewModel: ObservableObject {
     func addSubscribers() {
         movieDataService.$movies
             .sink { [weak self] (returnedMovies) in
-                self?.movies = returnedMovies
+                self?.movies = returnedMovies.map{MovieItem(model: $0)}
             }
             .store(in: &cancellables)
     }

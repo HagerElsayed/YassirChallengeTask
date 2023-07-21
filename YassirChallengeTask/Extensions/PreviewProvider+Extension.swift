@@ -16,7 +16,9 @@ extension PreviewProvider {
 class DeveloperPreview {
     static let instance = DeveloperPreview()
     
-    private init() { }
+    private init() {
+        initializeMovieItem()
+    }
     let homeViewModel = HomeViewModel()
     let movie = Movie(
         id: 1,
@@ -25,8 +27,15 @@ class DeveloperPreview {
         title: "Movie",
         overview: "Movie OverView",
         popularity: 84,
-        posterPath: "/gPbM0MK8CP8A174rmUwGsADNYKD.jpg",
+        posterPath: "\(APIConfiguration.posterW500)gPbM0MK8CP8A174rmUwGsADNYKD.jpg",
         voteAverage: 7.3,
         voteCount: 100
-    )  
+    )
+   
+    var movieItem: MovieItem?
+    func initializeMovieItem() {
+        movieItem = MovieItem(model: movie)
+    }
+    @Namespace var namespace
+    
 }

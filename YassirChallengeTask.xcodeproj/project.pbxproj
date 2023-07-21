@@ -20,8 +20,13 @@
 		04A0CDFC2A69DE1000817623 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDFB2A69DE1000817623 /* APIConfiguration.swift */; };
 		04A0CDFE2A69E2E800817623 /* MovieDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDFD2A69E2E800817623 /* MovieDataService.swift */; };
 		04A0CE012A69E9BD00817623 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CE002A69E9BD00817623 /* HomeViewModel.swift */; };
-		04A0CE042A69ECC200817623 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CE032A69ECC200817623 /* PreviewProvider.swift */; };
+		04A0CE042A69ECC200817623 /* PreviewProvider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CE032A69ECC200817623 /* PreviewProvider+Extension.swift */; };
 		04CADFF02A6AB09200CE0866 /* YassirKeys in Frameworks */ = {isa = PBXBuildFile; productRef = 04CADFEF2A6AB09200CE0866 /* YassirKeys */; };
+		04CADFF32A6AC4DE00CE0866 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CADFF22A6AC4DE00CE0866 /* RoundedCorner.swift */; };
+		04CADFF52A6AC50C00CE0866 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CADFF42A6AC50C00CE0866 /* View+Extension.swift */; };
+		04CADFF72A6AC5B800CE0866 /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CADFF62A6AC5B800CE0866 /* MovieItem.swift */; };
+		04CADFF92A6AE2CD00CE0866 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CADFF82A6AE2CD00CE0866 /* String+Extension.swift */; };
+		04CADFFB2A6AE67200CE0866 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CADFFA2A6AE67200CE0866 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +63,13 @@
 		04A0CDFB2A69DE1000817623 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		04A0CDFD2A69E2E800817623 /* MovieDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataService.swift; sourceTree = "<group>"; };
 		04A0CE002A69E9BD00817623 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		04A0CE032A69ECC200817623 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		04A0CE032A69ECC200817623 /* PreviewProvider+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+Extension.swift"; sourceTree = "<group>"; };
 		04CADFED2A6AADFA00CE0866 /* YassirKeys */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = YassirKeys; path = dependencies/YassirKeys; sourceTree = "<group>"; };
+		04CADFF22A6AC4DE00CE0866 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		04CADFF42A6AC50C00CE0866 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		04CADFF62A6AC5B800CE0866 /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
+		04CADFF82A6AE2CD00CE0866 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		04CADFFA2A6AE67200CE0866 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,7 @@
 		04A0CDBD2A69C9B700817623 /* YassirChallengeTask */ = {
 			isa = PBXGroup;
 			children = (
+				04CADFF12A6AC4BF00CE0866 /* CustomShap */,
 				04A0CE022A69ECAD00817623 /* Extensions */,
 				04A0CDF02A69D01300817623 /* Utilities */,
 				04A0CDFA2A69DDF800817623 /* Services */,
@@ -155,6 +166,7 @@
 			children = (
 				04A0CDF42A69D13700817623 /* Movie.swift */,
 				04A0CDF62A69D36E00817623 /* MovieResponse.swift */,
+				04CADFF62A6AC5B800CE0866 /* MovieItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,7 +224,10 @@
 		04A0CE022A69ECAD00817623 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				04A0CE032A69ECC200817623 /* PreviewProvider.swift */,
+				04A0CE032A69ECC200817623 /* PreviewProvider+Extension.swift */,
+				04CADFF42A6AC50C00CE0866 /* View+Extension.swift */,
+				04CADFF82A6AE2CD00CE0866 /* String+Extension.swift */,
+				04CADFFA2A6AE67200CE0866 /* Color+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,6 +245,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04CADFF12A6AC4BF00CE0866 /* CustomShap */ = {
+			isa = PBXGroup;
+			children = (
+				04CADFF22A6AC4DE00CE0866 /* RoundedCorner.swift */,
+			);
+			path = CustomShap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,16 +388,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CADFF32A6AC4DE00CE0866 /* RoundedCorner.swift in Sources */,
 				04A0CDEE2A69CF5C00817623 /* MovieItemView.swift in Sources */,
 				04A0CDC12A69C9B700817623 /* ContentView.swift in Sources */,
 				04A0CDEC2A69CF0C00817623 /* MovieHomeView.swift in Sources */,
 				04A0CE012A69E9BD00817623 /* HomeViewModel.swift in Sources */,
 				04A0CDFC2A69DE1000817623 /* APIConfiguration.swift in Sources */,
 				04A0CDF92A69DBCE00817623 /* NetworkManager.swift in Sources */,
-				04A0CE042A69ECC200817623 /* PreviewProvider.swift in Sources */,
+				04CADFFB2A6AE67200CE0866 /* Color+Extension.swift in Sources */,
+				04CADFF72A6AC5B800CE0866 /* MovieItem.swift in Sources */,
+				04A0CE042A69ECC200817623 /* PreviewProvider+Extension.swift in Sources */,
 				04A0CDF72A69D36E00817623 /* MovieResponse.swift in Sources */,
 				04A0CDFE2A69E2E800817623 /* MovieDataService.swift in Sources */,
+				04CADFF52A6AC50C00CE0866 /* View+Extension.swift in Sources */,
 				04A0CDBF2A69C9B700817623 /* YassirChallengeTaskApp.swift in Sources */,
+				04CADFF92A6AE2CD00CE0866 /* String+Extension.swift in Sources */,
 				04A0CDF52A69D13700817623 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
