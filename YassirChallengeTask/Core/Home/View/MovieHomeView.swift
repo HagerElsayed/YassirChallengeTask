@@ -27,6 +27,7 @@ struct MovieHomeView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
+                WelcomeView()
                 allMoviesList
             }
         }

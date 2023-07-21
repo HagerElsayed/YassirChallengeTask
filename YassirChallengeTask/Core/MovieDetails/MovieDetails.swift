@@ -37,16 +37,18 @@ struct MovieDetails: View {
                 VStack(alignment: .leading) {
                     Text(movie.title)
                         .foregroundColor(Color.theme.primary)
-                        .font(.title)
+                        .font(.headline)
                         .fontWeight(.bold)
                         .padding(.top, 30)
                     
-                    Text("OverView:")
+                    Text("Overview:")
+                        .foregroundColor(Color.theme.primary)
                         .fontWeight(.regular)
-                        .font(.title3)
+                        .font(.headline)
+                        .padding(.vertical,5)
                     
                     Text(movie.overview)
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color.theme.secondaryText)
                         .fontWeight(.light)
                         .padding(.bottom, 20)
        

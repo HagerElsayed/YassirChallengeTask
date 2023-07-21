@@ -34,6 +34,7 @@
 		04CAE0072A6B174E00CE0866 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE0062A6B174E00CE0866 /* MainFlow.swift */; };
 		04CAE00A2A6B1DE600CE0866 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE0092A6B1DE600CE0866 /* MovieDetails.swift */; };
 		04CAE00C2A6B213A00CE0866 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE00B2A6B213A00CE0866 /* BackButton.swift */; };
+		04CAE00E2A6B2B9900CE0866 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE00D2A6B2B9900CE0866 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		04CAE0062A6B174E00CE0866 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		04CAE0092A6B1DE600CE0866 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		04CAE00B2A6B213A00CE0866 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		04CAE00D2A6B2B9900CE0866 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				04A0CDEB2A69CF0C00817623 /* MovieHomeView.swift */,
 				04A0CDED2A69CF5C00817623 /* MovieItemView.swift */,
+				04CAE00D2A6B2B9900CE0866 /* WelcomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				04A0CDF72A69D36E00817623 /* MovieResponse.swift in Sources */,
 				04A0CDFE2A69E2E800817623 /* MovieDataService.swift in Sources */,
 				04CAE00C2A6B213A00CE0866 /* BackButton.swift in Sources */,
+				04CAE00E2A6B2B9900CE0866 /* WelcomeView.swift in Sources */,
 				04CADFF52A6AC50C00CE0866 /* View+Extension.swift in Sources */,
 				04A0CDBF2A69C9B700817623 /* YassirChallengeTaskApp.swift in Sources */,
 				04CADFF92A6AE2CD00CE0866 /* String+Extension.swift in Sources */,
