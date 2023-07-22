@@ -11,7 +11,6 @@
 		04A0CDC12A69C9B700817623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDC02A69C9B700817623 /* ContentView.swift */; };
 		04A0CDC32A69C9BC00817623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A0CDC22A69C9BC00817623 /* Assets.xcassets */; };
 		04A0CDC62A69C9BC00817623 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A0CDC52A69C9BC00817623 /* Preview Assets.xcassets */; };
-		04A0CDD02A69C9BD00817623 /* YassirChallengeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDCF2A69C9BD00817623 /* YassirChallengeTaskTests.swift */; };
 		04A0CDEC2A69CF0C00817623 /* MovieHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDEB2A69CF0C00817623 /* MovieHomeView.swift */; };
 		04A0CDEE2A69CF5C00817623 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDED2A69CF5C00817623 /* MovieItemView.swift */; };
 		04A0CDF52A69D13700817623 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDF42A69D13700817623 /* Movie.swift */; };
@@ -35,17 +34,17 @@
 		04CAE00A2A6B1DE600CE0866 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE0092A6B1DE600CE0866 /* MovieDetails.swift */; };
 		04CAE00C2A6B213A00CE0866 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE00B2A6B213A00CE0866 /* BackButton.swift */; };
 		04CAE00E2A6B2B9900CE0866 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE00D2A6B2B9900CE0866 /* WelcomeView.swift */; };
+		04CAE0122A6BC5FC00CE0866 /* MovieTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE0112A6BC5FC00CE0866 /* MovieTest.swift */; };
+		04CAE0162A6BC6A700CE0866 /* CodableTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE0152A6BC6A700CE0866 /* CodableTestCase.swift */; };
+		04CAE0192A6BC73E00CE0866 /* Data+JSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE0182A6BC73E00CE0866 /* Data+JSONFile.swift */; };
+		04CAE01F2A6BCDBA00CE0866 /* XCTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE01E2A6BCDBA00CE0866 /* XCTestHelper.swift */; };
+		04CAE0202A6BD4AD00CE0866 /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 04CAE01B2A6BC79200CE0866 /* Movie.json */; };
+		04CAE0212A6BD4AD00CE0866 /* MovieResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 04CAE01C2A6BC80300CE0866 /* MovieResponse.json */; };
+		04CAE0232A6BECC600CE0866 /* MovieResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE0222A6BECC600CE0866 /* MovieResponseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		04A0CDCC2A69C9BD00817623 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04A0CDB32A69C9B700817623 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 04A0CDBA2A69C9B700817623;
-			remoteInfo = YassirChallengeTask;
-		};
-		04A0CDD62A69C9BD00817623 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04A0CDB32A69C9B700817623 /* Project object */;
 			proxyType = 1;
@@ -61,8 +60,6 @@
 		04A0CDC22A69C9BC00817623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A0CDC52A69C9BC00817623 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04A0CDCB2A69C9BD00817623 /* YassirChallengeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YassirChallengeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04A0CDCF2A69C9BD00817623 /* YassirChallengeTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirChallengeTaskTests.swift; sourceTree = "<group>"; };
-		04A0CDD52A69C9BD00817623 /* YassirChallengeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YassirChallengeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A0CDEB2A69CF0C00817623 /* MovieHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHomeView.swift; sourceTree = "<group>"; };
 		04A0CDED2A69CF5C00817623 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 		04A0CDF42A69D13700817623 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -86,6 +83,13 @@
 		04CAE0092A6B1DE600CE0866 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		04CAE00B2A6B213A00CE0866 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		04CAE00D2A6B2B9900CE0866 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		04CAE0112A6BC5FC00CE0866 /* MovieTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTest.swift; sourceTree = "<group>"; };
+		04CAE0152A6BC6A700CE0866 /* CodableTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTestCase.swift; sourceTree = "<group>"; };
+		04CAE0182A6BC73E00CE0866 /* Data+JSONFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+JSONFile.swift"; sourceTree = "<group>"; };
+		04CAE01B2A6BC79200CE0866 /* Movie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
+		04CAE01C2A6BC80300CE0866 /* MovieResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MovieResponse.json; sourceTree = "<group>"; };
+		04CAE01E2A6BCDBA00CE0866 /* XCTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestHelper.swift; sourceTree = "<group>"; };
+		04CAE0222A6BECC600CE0866 /* MovieResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +102,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		04A0CDC82A69C9BD00817623 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04A0CDD22A69C9BD00817623 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,7 +127,6 @@
 			children = (
 				04A0CDBB2A69C9B700817623 /* YassirChallengeTask.app */,
 				04A0CDCB2A69C9BD00817623 /* YassirChallengeTaskTests.xctest */,
-				04A0CDD52A69C9BD00817623 /* YassirChallengeTaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,7 +159,10 @@
 		04A0CDCE2A69C9BD00817623 /* YassirChallengeTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				04A0CDCF2A69C9BD00817623 /* YassirChallengeTaskTests.swift */,
+				04CAE01A2A6BC76200CE0866 /* Data */,
+				04CAE0132A6BC68F00CE0866 /* TestTypes */,
+				04CAE00F2A6BC5D000CE0866 /* Cases */,
+				04CAE01D2A6BCD9100CE0866 /* XCTest Helpers */,
 			);
 			path = YassirChallengeTaskTests;
 			sourceTree = "<group>";
@@ -303,6 +302,65 @@
 			path = MovieDetails;
 			sourceTree = "<group>";
 		};
+		04CAE00F2A6BC5D000CE0866 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				04CAE0102A6BC5DC00CE0866 /* Models */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		04CAE0102A6BC5DC00CE0866 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04CAE0112A6BC5FC00CE0866 /* MovieTest.swift */,
+				04CAE0222A6BECC600CE0866 /* MovieResponseTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04CAE0132A6BC68F00CE0866 /* TestTypes */ = {
+			isa = PBXGroup;
+			children = (
+				04CAE0172A6BC71B00CE0866 /* Extensions */,
+				04CAE0142A6BC69600CE0866 /* Protocols */,
+			);
+			path = TestTypes;
+			sourceTree = "<group>";
+		};
+		04CAE0142A6BC69600CE0866 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04CAE0152A6BC6A700CE0866 /* CodableTestCase.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		04CAE0172A6BC71B00CE0866 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04CAE0182A6BC73E00CE0866 /* Data+JSONFile.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04CAE01A2A6BC76200CE0866 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				04CAE01B2A6BC79200CE0866 /* Movie.json */,
+				04CAE01C2A6BC80300CE0866 /* MovieResponse.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		04CAE01D2A6BCD9100CE0866 /* XCTest Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04CAE01E2A6BCDBA00CE0866 /* XCTestHelper.swift */,
+			);
+			path = "XCTest Helpers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,24 +402,6 @@
 			productReference = 04A0CDCB2A69C9BD00817623 /* YassirChallengeTaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		04A0CDD42A69C9BD00817623 /* YassirChallengeTaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04A0CDE52A69C9BD00817623 /* Build configuration list for PBXNativeTarget "YassirChallengeTaskUITests" */;
-			buildPhases = (
-				04A0CDD12A69C9BD00817623 /* Sources */,
-				04A0CDD22A69C9BD00817623 /* Frameworks */,
-				04A0CDD32A69C9BD00817623 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04A0CDD72A69C9BD00817623 /* PBXTargetDependency */,
-			);
-			name = YassirChallengeTaskUITests;
-			productName = YassirChallengeTaskUITests;
-			productReference = 04A0CDD52A69C9BD00817623 /* YassirChallengeTaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -376,10 +416,6 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					04A0CDCA2A69C9BD00817623 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 04A0CDBA2A69C9B700817623;
-					};
-					04A0CDD42A69C9BD00817623 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 04A0CDBA2A69C9B700817623;
 					};
@@ -400,7 +436,6 @@
 			targets = (
 				04A0CDBA2A69C9B700817623 /* YassirChallengeTask */,
 				04A0CDCA2A69C9BD00817623 /* YassirChallengeTaskTests */,
-				04A0CDD42A69C9BD00817623 /* YassirChallengeTaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -419,13 +454,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04A0CDD32A69C9BD00817623 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				04CAE0202A6BD4AD00CE0866 /* Movie.json in Resources */,
+				04CAE0212A6BD4AD00CE0866 /* MovieResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,14 +497,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A0CDD02A69C9BD00817623 /* YassirChallengeTaskTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04A0CDD12A69C9BD00817623 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				04CAE0232A6BECC600CE0866 /* MovieResponseTests.swift in Sources */,
+				04CAE0122A6BC5FC00CE0866 /* MovieTest.swift in Sources */,
+				04CAE01F2A6BCDBA00CE0866 /* XCTestHelper.swift in Sources */,
+				04CAE0192A6BC73E00CE0866 /* Data+JSONFile.swift in Sources */,
+				04CAE0162A6BC6A700CE0866 /* CodableTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,11 +512,6 @@
 			isa = PBXTargetDependency;
 			target = 04A0CDBA2A69C9B700817623 /* YassirChallengeTask */;
 			targetProxy = 04A0CDCC2A69C9BD00817623 /* PBXContainerItemProxy */;
-		};
-		04A0CDD72A69C9BD00817623 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 04A0CDBA2A69C9B700817623 /* YassirChallengeTask */;
-			targetProxy = 04A0CDD62A69C9BD00817623 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -700,40 +722,6 @@
 			};
 			name = Release;
 		};
-		04A0CDE62A69C9BD00817623 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YassirChallengeTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YassirChallengeTask;
-			};
-			name = Debug;
-		};
-		04A0CDE72A69C9BD00817623 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mac.YassirChallengeTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YassirChallengeTask;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -760,15 +748,6 @@
 			buildConfigurations = (
 				04A0CDE32A69C9BD00817623 /* Debug */,
 				04A0CDE42A69C9BD00817623 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		04A0CDE52A69C9BD00817623 /* Build configuration list for PBXNativeTarget "YassirChallengeTaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04A0CDE62A69C9BD00817623 /* Debug */,
-				04A0CDE72A69C9BD00817623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

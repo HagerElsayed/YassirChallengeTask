@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct MovieResponse: Codable {
+struct MovieResponse: Codable, Equatable {
     let page: Int?
     let results: [Movie]?
     let totalPages: Int?
     let totalResults: Int?
     
     init(
-        page: Int?,
+        page: Int? = nil,
         results: [Movie]?,
-        totalPages: Int?,
-        totalResults: Int?
+        totalPages: Int? = nil,
+        totalResults: Int? = nil
     ) {
         self.page = page
         self.results = results

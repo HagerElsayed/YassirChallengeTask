@@ -22,7 +22,6 @@ struct MovieItem: Identifiable {
         self.overview = model.overview?.defaultIfEmpty ?? "".defaultIfEmpty
         self.posterPath = "\(APIConfiguration.posterW500)\(model.posterPath ?? "")" 
         self.voteCount = "\(model.voteCount ?? 0)".defaultIfEmpty
-        print("self.posterPath \(self.posterPath)")
     }
 }
 
