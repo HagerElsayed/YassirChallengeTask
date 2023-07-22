@@ -20,6 +20,8 @@
 		04A0CDFE2A69E2E800817623 /* MovieDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDFD2A69E2E800817623 /* MovieDataService.swift */; };
 		04A0CE012A69E9BD00817623 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CE002A69E9BD00817623 /* HomeViewModel.swift */; };
 		04A0CE042A69ECC200817623 /* PreviewProvider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CE032A69ECC200817623 /* PreviewProvider+Extension.swift */; };
+		04A1BFB92A6C0CEC008AE383 /* MockMovieDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1BFB82A6C0CEC008AE383 /* MockMovieDataService.swift */; };
+		04A1BFBC2A6C0EF7008AE383 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1BFBB2A6C0EF7008AE383 /* HomeViewModelTests.swift */; };
 		04CADFF02A6AB09200CE0866 /* YassirKeys in Frameworks */ = {isa = PBXBuildFile; productRef = 04CADFEF2A6AB09200CE0866 /* YassirKeys */; };
 		04CADFF32A6AC4DE00CE0866 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CADFF22A6AC4DE00CE0866 /* RoundedCorner.swift */; };
 		04CADFF52A6AC50C00CE0866 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CADFF42A6AC50C00CE0866 /* View+Extension.swift */; };
@@ -69,6 +71,8 @@
 		04A0CDFD2A69E2E800817623 /* MovieDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataService.swift; sourceTree = "<group>"; };
 		04A0CE002A69E9BD00817623 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		04A0CE032A69ECC200817623 /* PreviewProvider+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+Extension.swift"; sourceTree = "<group>"; };
+		04A1BFB82A6C0CEC008AE383 /* MockMovieDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieDataService.swift; sourceTree = "<group>"; };
+		04A1BFBB2A6C0EF7008AE383 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		04CADFED2A6AADFA00CE0866 /* YassirKeys */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = YassirKeys; path = dependencies/YassirKeys; sourceTree = "<group>"; };
 		04CADFF22A6AC4DE00CE0866 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		04CADFF42A6AC50C00CE0866 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		04A0CDCE2A69C9BD00817623 /* YassirChallengeTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				04A1BFB72A6C0CD7008AE383 /* Mocks */,
 				04CAE01A2A6BC76200CE0866 /* Data */,
 				04CAE0132A6BC68F00CE0866 /* TestTypes */,
 				04CAE00F2A6BC5D000CE0866 /* Cases */,
@@ -253,6 +258,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		04A1BFB72A6C0CD7008AE383 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				04A1BFB82A6C0CEC008AE383 /* MockMovieDataService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		04A1BFBA2A6C0EE1008AE383 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04A1BFBB2A6C0EF7008AE383 /* HomeViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		04CADFEC2A6AADFA00CE0866 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +326,7 @@
 		04CAE00F2A6BC5D000CE0866 /* Cases */ = {
 			isa = PBXGroup;
 			children = (
+				04A1BFBA2A6C0EE1008AE383 /* ViewModel */,
 				04CAE0102A6BC5DC00CE0866 /* Models */,
 			);
 			path = Cases;
@@ -501,7 +523,9 @@
 				04CAE0122A6BC5FC00CE0866 /* MovieTest.swift in Sources */,
 				04CAE01F2A6BCDBA00CE0866 /* XCTestHelper.swift in Sources */,
 				04CAE0192A6BC73E00CE0866 /* Data+JSONFile.swift in Sources */,
+				04A1BFB92A6C0CEC008AE383 /* MockMovieDataService.swift in Sources */,
 				04CAE0162A6BC6A700CE0866 /* CodableTestCase.swift in Sources */,
+				04A1BFBC2A6C0EF7008AE383 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

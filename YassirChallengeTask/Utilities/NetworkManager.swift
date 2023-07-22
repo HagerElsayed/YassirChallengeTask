@@ -12,11 +12,12 @@ class NetworkManager {
     enum NetworkingError: LocalizedError {
         case badURLResponse(url: URL)
         case invalidAPIKey
-        
+        case inValidURL
         var errorDescription: String? {
             switch self {
             case .badURLResponse(url: let url): return "[❌] Bad URL Response from URL: \(url)"
             case .invalidAPIKey: return "[🔴] Invalid API key: You must be granted a valid key."
+            case .inValidURL:  return "[❌] invalid URL"
             }
         }
     }

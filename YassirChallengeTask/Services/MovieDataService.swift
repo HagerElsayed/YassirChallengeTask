@@ -8,15 +8,22 @@
 import Foundation
 import Combine
 
-class MovieDataService {
-    
+protocol MovieDataServiceProtocol: AnyObject {
+    var movies: [Movie] { get set }
+    var moviesPublisher: AnyPublisher<[Movie], Never> { get }
+    func getMovies()
+}
+
+class MovieDataService: MovieDataServiceProtocol {
+    private var movieSubscription: AnyCancellable?
     @Published var movies: [Movie] = []
-    var movieSubscription: AnyCancellable?
+    var moviesPublisher: AnyPublisher<[Movie], Never> { $movies.eraseToAnyPublisher() }
+
     init() {
         getMovies()
     }
     
-    private func getMovies() {
+    func getMovies() {
         guard let url = URL(string: APIConfiguration.trendingMovies) else { return }
         movieSubscription = NetworkManager.get(url: url)
             .decode(type: MovieResponse.self, decoder: JSONDecoder())

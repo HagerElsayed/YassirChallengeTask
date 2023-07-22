@@ -10,19 +10,20 @@ import Combine
 
 class HomeViewModel: ObservableObject {
     @Published var movies: [MovieItem] = []
-    private let movieDataService = MovieDataService()
+    let movieDataService: MovieDataServiceProtocol
     private var cancellables = Set<AnyCancellable>()
     
-    init() {
+    init(movieDataService: MovieDataServiceProtocol = MovieDataService()) {
+        self.movieDataService = movieDataService
         addSubscribers()
     }
     
     func addSubscribers() {
-        movieDataService.$movies
+        movieDataService.moviesPublisher
             .sink { [weak self] (returnedMovies) in
-                self?.movies = returnedMovies.map{MovieItem(model: $0)}
+                guard let self = self else { return }
+                self.movies = returnedMovies.map { MovieItem(model: $0) }
             }
             .store(in: &cancellables)
     }
-    
 }
