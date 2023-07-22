@@ -12,18 +12,22 @@ struct MainFlow: View {
     @State private var isDetails = false
     @State var detailData: MovieItem = MovieItem(model: DeveloperPreview.instance.movie)
     @StateObject private var homeViewModel = HomeViewModel()
+    private var detailsViewModel: DetailsViewModel{
+        DetailsViewModel(id: detailData.id)
+    }
 
     var body: some View {
         ZStack {
             if isDetails {
-                MovieDetails(namespace: namespace, detailsData: $detailData, isDetails: $isDetails)
+                MovieDetails(namespace: namespace, detailsData: $detailData, isDetails: $isDetails, viewModel: detailsViewModel)
+                
             } else {
                 MovieHomeView(namespace: namespace, detailsData: $detailData, isDetails: $isDetails)
                     .environmentObject(homeViewModel)
             }
         }
         .background(Color.theme.background)
-       
+        
     }
 }
 

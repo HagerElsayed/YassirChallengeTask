@@ -15,5 +15,9 @@ enum APIConfiguration {
     static let trendingMovies = baseURL + "discover/movie?api_key=\(apiKey)"
     static let posterBaseURL = "https://image.tmdb.org/t/p/"
     static let posterW500 = posterBaseURL + "w500"
+    static func moviesById(id: String) -> String {
+        let url = "\(baseURL)movie/\(id)?api_key=\(apiKey)"
+        return url
+    }
 }
 

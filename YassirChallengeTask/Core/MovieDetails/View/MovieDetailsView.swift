@@ -11,14 +11,18 @@ struct MovieDetails: View {
     @Binding var movie: MovieItem
     @Binding var isDetails: Bool
     let namespace: Namespace.ID
+    @StateObject private var viewModel: DetailsViewModel
+    // i handled the details with details endpoint as mentioned in the Docs but i prefer to pass the object since we already have it from the list
     init(
         namespace: Namespace.ID = Namespace().wrappedValue,
         detailsData: Binding<MovieItem> = .constant(MovieItem(model: DeveloperPreview.instance.movie)),
-        isDetails: Binding<Bool> = .constant(true)
+        isDetails: Binding<Bool> = .constant(true),
+        viewModel: DetailsViewModel = DetailsViewModel() 
     ) {
         self._movie = detailsData
         self._isDetails = isDetails
         self.namespace = namespace
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
     var body: some View {
         ScrollView {
@@ -33,7 +37,6 @@ struct MovieDetails: View {
                     }
                     
                 }
-                
                 VStack(alignment: .leading) {
                     Text(movie.title)
                         .foregroundColor(Color.theme.primary)
@@ -62,6 +65,7 @@ struct MovieDetails: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
+        .background(Color.theme.background)
     }
 }
 
@@ -69,6 +73,11 @@ struct MovieDetails: View {
 
 struct MovieDetails_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetails()
+        Group {
+            MovieDetails()
+            MovieDetails()
+                .preferredColorScheme(.dark)
+        }
+        
     }
 }

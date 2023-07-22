@@ -20,6 +20,7 @@ class DeveloperPreview {
         initializeMovieItem()
     }
     let homeViewModel = HomeViewModel()
+    let detailsViewModel = DetailsViewModel(id: 1)
     let movie = Movie(
         id: 1,
         adult: false,
