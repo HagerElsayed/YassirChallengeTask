@@ -9,7 +9,7 @@
 import XCTest
 import Combine
 
-class MockMovieDataService: MovieDataServiceProtocol {
+final class MockMovieDataService: MovieDataServiceProtocol {
     var movies: [Movie] = []
     var moviesPublisher: AnyPublisher<[Movie], Never> {
         Just(movies)

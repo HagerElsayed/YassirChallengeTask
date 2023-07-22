@@ -7,26 +7,32 @@
 
 import UIKit
 import Combine
+
+
 class MovieImageViewModel: ObservableObject {
     @Published var image: UIImage? = nil
     @Published var isLoading: Bool = false
     private var cancellable = Set<AnyCancellable>()
     private let movie: MovieItem
-    private let imageService: MovieImageService
+    private var movieImageService: MovieImageServiceLoader
     
-    init(movie: MovieItem) {
+    init(
+        movie: MovieItem,
+        movieImageService: MovieImageServiceLoader = MovieImageService(movieItem: MovieItem.empty)
+    ) {
         self.movie = movie
-        self.imageService = MovieImageService(movieItem: movie)
+        self.movieImageService = MovieImageService(movieItem: movie)
         addSubscribers()
         self.isLoading = true
     }
     
-    private func addSubscribers() {
-        imageService.$image
+    func addSubscribers() {
+        movieImageService.imagePublisher
             .sink { [weak self] (_) in
                 self?.isLoading = false
             } receiveValue: { [weak self] returnedImage in
-                self?.image = returnedImage
+                guard let self = self else { return }
+                self.image = returnedImage
             }
             .store(in: &cancellable)
     }

@@ -7,13 +7,24 @@
 
 import UIKit
 import Combine
-class MovieImageService {
-    @Published var image:UIImage? = nil
-    var imageSubscription: AnyCancellable?
+
+protocol MovieImageServiceLoader: AnyObject {
+    var image: UIImage { get set }
+    var imagePublisher: AnyPublisher<UIImage?, Never> { get }
+    func getMoviesImages()
+}
+
+class MovieImageService: MovieImageServiceLoader {
+    @Published var image: UIImage = UIImage()
     private let movieItem: MovieItem
     private let fileManager = LocalFileManager()
     private let folderName = "movie_images"
     private let imageName: String
+    private var imageSubscription: AnyCancellable?
+    
+    var imagePublisher: AnyPublisher<UIImage?, Never> {
+        $image.map { $0 }.eraseToAnyPublisher()
+    }
     
     init(movieItem: MovieItem) {
         self.movieItem = movieItem
@@ -21,7 +32,7 @@ class MovieImageService {
         getMoviesImages()
     }
     
-    private func getMoviesImages() {
+    func getMoviesImages() {
         if let savedImage = fileManager.getImage(imageName: imageName, folderName: folderName) {
             image = savedImage
         } else {

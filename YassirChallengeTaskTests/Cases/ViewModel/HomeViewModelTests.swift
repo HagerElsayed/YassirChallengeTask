@@ -40,6 +40,4 @@ class HomeViewModelTests: XCTestCase {
         XCTAssertTrue(mockMovieDataService.getMoviesCalled)
         XCTAssertEqual(viewModel.movies.count, 1)
     }
-    
-    
 }

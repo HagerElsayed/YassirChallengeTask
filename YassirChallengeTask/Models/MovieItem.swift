@@ -14,7 +14,8 @@ struct MovieItem: Identifiable {
     let posterPath: String
     let voteCount: String
     let model: Movie
-
+    static let empty = MovieItem(model: Movie())
+    
     init(model: Movie) {
         self.model = model
         self.id = model.id ?? 0

@@ -42,10 +42,10 @@ struct Movie: Identifiable, Codable, Equatable {
     let voteCount: Int?
     
     init(
-        id: Int?,
+        id: Int? = nil,
         adult: Bool? = nil,
         originalTitle: String? = nil,
-        title: String?,
+        title: String? = nil,
         overview: String? = nil,
         popularity: Double? = nil,
         posterPath: String? = nil,

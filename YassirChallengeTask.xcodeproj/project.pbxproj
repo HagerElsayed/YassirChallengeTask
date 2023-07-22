@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045F94B22A6C56E600A665E2 /* MovieImageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F94B12A6C56E600A665E2 /* MovieImageViewModelTests.swift */; };
+		045F94B42A6C570600A665E2 /* MockMovieImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F94B32A6C570600A665E2 /* MockMovieImageService.swift */; };
 		04A0CDBF2A69C9B700817623 /* YassirChallengeTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDBE2A69C9B700817623 /* YassirChallengeTaskApp.swift */; };
 		04A0CDC12A69C9B700817623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CDC02A69C9B700817623 /* ContentView.swift */; };
 		04A0CDC32A69C9BC00817623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A0CDC22A69C9BC00817623 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045F94B12A6C56E600A665E2 /* MovieImageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieImageViewModelTests.swift; sourceTree = "<group>"; };
+		045F94B32A6C570600A665E2 /* MockMovieImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieImageService.swift; sourceTree = "<group>"; };
 		04A0CDBB2A69C9B700817623 /* YassirChallengeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YassirChallengeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A0CDBE2A69C9B700817623 /* YassirChallengeTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirChallengeTaskApp.swift; sourceTree = "<group>"; };
 		04A0CDC02A69C9B700817623 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				04A1BFB82A6C0CEC008AE383 /* MockMovieDataService.swift */,
+				045F94B32A6C570600A665E2 /* MockMovieImageService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				04A1BFBB2A6C0EF7008AE383 /* HomeViewModelTests.swift */,
+				045F94B12A6C56E600A665E2 /* MovieImageViewModelTests.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -522,6 +528,8 @@
 				04CAE0232A6BECC600CE0866 /* MovieResponseTests.swift in Sources */,
 				04CAE0122A6BC5FC00CE0866 /* MovieTest.swift in Sources */,
 				04CAE01F2A6BCDBA00CE0866 /* XCTestHelper.swift in Sources */,
+				045F94B22A6C56E600A665E2 /* MovieImageViewModelTests.swift in Sources */,
+				045F94B42A6C570600A665E2 /* MockMovieImageService.swift in Sources */,
 				04CAE0192A6BC73E00CE0866 /* Data+JSONFile.swift in Sources */,
 				04A1BFB92A6C0CEC008AE383 /* MockMovieDataService.swift in Sources */,
 				04CAE0162A6BC6A700CE0866 /* CodableTestCase.swift in Sources */,
