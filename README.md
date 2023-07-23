@@ -20,6 +20,8 @@ IOS Movie App written in SwiftUI using MVVM
 
 * Clone the project.
 * add .env file on the project's root, .env file contains the movieApiKey[will be shared over the email]
+* Run `bundle exec arkana` this command to create dependencies folder
+* <b>Adding a local Swift Package to your Xcode project</b>: Choose <kbd>File</kbd> → <kbd>Add Packages…</kbd> and click on <kbd>Add Local…</kbd>. Locate and select the `YassirKeys` folder
 * Run the project
 
 ## Credits
