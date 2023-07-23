@@ -46,16 +46,21 @@ extension MovieHomeView {
             ],
             spacing: 30
         ) {
+            
             ForEach(viewModel.movies) { movie in
-                MovieItemView(movie: movie, namespace: namespace)
-                    .matchedGeometryEffect(id: movie.id, in: namespace)
-                    .onTapGesture {
-                        // Mark: - go to Details screen
-                        withAnimation(.spring()) {
-                            self.movie = movie
-                            self.isDetails.toggle()
+                if(viewModel.isLoading) {
+                    SkeletonView(height: 200)
+                }else {
+                    MovieItemView(movie: movie, namespace: namespace)
+                        .matchedGeometryEffect(id: movie.id, in: namespace)
+                        .onTapGesture {
+                            // Mark: - go to Details screen
+                            withAnimation(.spring()) {
+                                self.movie = movie
+                                self.isDetails.toggle()
+                            }
                         }
-                    }
+                }
             }
         }
         .padding(16)

@@ -10,11 +10,11 @@ import Combine
 
 class DetailsViewModel: ObservableObject {
     @Published var movie: MovieItem = MovieItem.empty
-    let movieDetailsService: MovieDetailsServiceProtocol
+    private let movieDetailsService: MovieDetailsServiceProtocol
     private var cancellables = Set<AnyCancellable>()
     
     init(
-        movieDetailsService: MovieDetailsServiceProtocol = MovieDetailsService(id: 0 ),
+        movieDetailsService: MovieDetailsServiceProtocol = MovieDetailsService(id: 0),
         id: Int = 0
     ) {
         self.movieDetailsService = movieDetailsService

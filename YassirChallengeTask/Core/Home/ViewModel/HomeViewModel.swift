@@ -10,19 +10,28 @@ import Combine
 
 class HomeViewModel: ObservableObject {
     @Published var movies: [MovieItem] = []
-    let movieDataService: MovieDataServiceProtocol
+    @Published var isLoading: Bool = false
+    private let movieDataService: MovieDataServiceProtocol
     private var cancellables = Set<AnyCancellable>()
     
     init(movieDataService: MovieDataServiceProtocol = MovieDataService()) {
         self.movieDataService = movieDataService
         addSubscribers()
+        self.isLoading = true
     }
     
     func addSubscribers() {
         movieDataService.moviesPublisher
-            .sink { [weak self] (returnedMovies) in
+            .handleEvents(receiveSubscription: { [weak self] _ in
+                self?.isLoading = true
+            })
+            .sink { [weak self] (_) in
+                self?.isLoading = false
+            } receiveValue: { [weak self] returnedMovies in
                 guard let self = self else { return }
                 self.movies = returnedMovies.map { MovieItem(model: $0) }
+                self.isLoading = false
+
             }
             .store(in: &cancellables)
     }
