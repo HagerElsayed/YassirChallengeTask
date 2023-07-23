@@ -94,7 +94,6 @@
 		04A0CE032A69ECC200817623 /* PreviewProvider+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+Extension.swift"; sourceTree = "<group>"; };
 		04A1BFB82A6C0CEC008AE383 /* MockMovieDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieDataService.swift; sourceTree = "<group>"; };
 		04A1BFBB2A6C0EF7008AE383 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
-		04CADFED2A6AADFA00CE0866 /* YassirKeys */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = YassirKeys; path = dependencies/YassirKeys; sourceTree = "<group>"; };
 		04CADFF22A6AC4DE00CE0866 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		04CADFF42A6AC50C00CE0866 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		04CADFF62A6AC5B800CE0866 /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
@@ -162,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				04EA737D2A6CB47D005DB562 /* Resources */,
-				04CADFEC2A6AADFA00CE0866 /* Packages */,
 				04A0CDBD2A69C9B700817623 /* YassirChallengeTask */,
 				04A0CDCE2A69C9BD00817623 /* YassirChallengeTaskTests */,
 				04A0CDBC2A69C9B700817623 /* Products */,
@@ -321,14 +319,6 @@
 				040F557C2A6C98C1000BCE1A /* MovieDetailsViewModelTests.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		04CADFEC2A6AADFA00CE0866 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				04CADFED2A6AADFA00CE0866 /* YassirKeys */,
-			);
-			name = Packages;
 			sourceTree = "<group>";
 		};
 		04CADFEE2A6AB09200CE0866 /* Frameworks */ = {
