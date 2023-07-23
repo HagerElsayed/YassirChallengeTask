@@ -1,5 +1,5 @@
 # YassirChallengeTask
-IOS Movie App written in SwiftUI using MVVM
+iOS Movie App written in SwiftUI using MVVM
 
 ## Requirements
 - iOS Target 16.4+
@@ -23,6 +23,7 @@ IOS Movie App written in SwiftUI using MVVM
 * Run `bundle exec arkana` this command to create dependencies folder
 * <b>Adding a local Swift Package to your Xcode project</b>: Choose <kbd>File</kbd> → <kbd>Add Packages…</kbd> and click on <kbd>Add Local…</kbd>. Locate and select the `YassirKeys` folder
 * Run the project
+![Installation](https://github.com/HagerElsayed/YassirChallengeTask/blob/main/Resources/YassirChallengeTaskInstallation.gif)
 
 ## Credits
 * [**App Icon**](https://icons8.com/icons/set/movie-apps)
