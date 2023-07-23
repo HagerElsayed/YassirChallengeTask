@@ -10,6 +10,7 @@
 		040F557B2A6C9817000BCE1A /* MockMovieDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F557A2A6C9817000BCE1A /* MockMovieDetailsService.swift */; };
 		040F557D2A6C98C1000BCE1A /* MovieDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F557C2A6C98C1000BCE1A /* MovieDetailsViewModelTests.swift */; };
 		043736802A6D37F7008811BE /* YassirTask.drawio.png in Resources */ = {isa = PBXBuildFile; fileRef = 0437367F2A6D37F7008811BE /* YassirTask.drawio.png */; };
+		044384382A6D4A3C00BA9BC3 /* YassirChallengeTaskInstallation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 044384372A6D4A3C00BA9BC3 /* YassirChallengeTaskInstallation.gif */; };
 		045445192A6C7B2A00FC19FD /* MovieDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045445182A6C7B2A00FC19FD /* MovieDetailsService.swift */; };
 		0454451D2A6C7C6F00FC19FD /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454451C2A6C7C6F00FC19FD /* DetailsViewModel.swift */; };
 		045F94B22A6C56E600A665E2 /* MovieImageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F94B12A6C56E600A665E2 /* MovieImageViewModelTests.swift */; };
@@ -71,6 +72,7 @@
 		040F557A2A6C9817000BCE1A /* MockMovieDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieDetailsService.swift; sourceTree = "<group>"; };
 		040F557C2A6C98C1000BCE1A /* MovieDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		0437367F2A6D37F7008811BE /* YassirTask.drawio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YassirTask.drawio.png; sourceTree = "<group>"; };
+		044384372A6D4A3C00BA9BC3 /* YassirChallengeTaskInstallation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YassirChallengeTaskInstallation.gif; sourceTree = "<group>"; };
 		045445182A6C7B2A00FC19FD /* MovieDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsService.swift; sourceTree = "<group>"; };
 		0454451C2A6C7C6F00FC19FD /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		045F94B12A6C56E600A665E2 /* MovieImageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieImageViewModelTests.swift; sourceTree = "<group>"; };
@@ -434,6 +436,7 @@
 		04EA737D2A6CB47D005DB562 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				044384372A6D4A3C00BA9BC3 /* YassirChallengeTaskInstallation.gif */,
 				0437367F2A6D37F7008811BE /* YassirTask.drawio.png */,
 				04EA73802A6CB4BA005DB562 /* detailsDark.png */,
 				04EA737E2A6CB4B9005DB562 /* detailsLight.png */,
@@ -537,6 +540,7 @@
 			files = (
 				04EA73852A6CB4BA005DB562 /* listLight.png in Resources */,
 				04EA73822A6CB4BA005DB562 /* detailsLight.png in Resources */,
+				044384382A6D4A3C00BA9BC3 /* YassirChallengeTaskInstallation.gif in Resources */,
 				043736802A6D37F7008811BE /* YassirTask.drawio.png in Resources */,
 				04EA73832A6CB4BA005DB562 /* listDark.png in Resources */,
 				04A0CDC62A69C9BC00817623 /* Preview Assets.xcassets in Resources */,
